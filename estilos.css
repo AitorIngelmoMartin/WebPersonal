@@ -14,8 +14,8 @@ header {
 
 header label{
     display: none;
-    width: 30px;
-    height: 30px;
+    width: 32px;
+    height: 32px;
     padding: 10px;
     border-right: 1px solid #FFF;
 
@@ -31,9 +31,15 @@ header label:hover{
     list-style: none;
     padding: 0;
     display: flex;
+    justify-content: row;
 }
 .menu li {
     border-right: 1px solid #FFF;
+}
+.menu li{
+    text-align: center;
+flex-grow: 1;
+
 }
 .menu li:hover{
     background:rgba(0,0,0,0.3);
@@ -46,7 +52,7 @@ header label:hover{
 }
 /* este tamaño marca que cuando el ancho valga eso, se ejecuta esto*/
 @media (max-width:500px){
-    headr label {/*Muestro el label*/
+    header label {/*Muestro el label*/
         display:block;
     }
 
@@ -55,6 +61,7 @@ header label:hover{
         background:#4E94AB;
         width: 70%;
         margin-left: -70%;
+        transition: all 0.25s;
 
     }
 
@@ -67,8 +74,8 @@ header label:hover{
         border-top: 1px solid #FFF;
 
     }
-}
+    #btn-menu:checked ~ .menu{/*busca la clase menu*/
+        margin: 0;
 
-/*
-Aparecer o no el menú 15:06
-https://www.youtube.com/watch?v=FL_odxf4zq4&ab_channel=J%26GProyectosWeb*/
+    }
+}
