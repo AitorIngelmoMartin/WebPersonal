@@ -5,7 +5,7 @@ body{
 
 header {
     width: 100%;
-    background: #4E94AB;
+    background: #212222;
 }
 
 #btn-menu {
@@ -42,7 +42,7 @@ flex-grow: 1;
 
 }
 .menu li:hover{
-    background:rgba(0,0,0,0.3);
+    background:rgba(51, 50, 50, 0.836);
 }
 .menu li a {
     display: block;
@@ -55,14 +55,12 @@ flex-grow: 1;
     header label {/*Muestro el label*/
         display:block;
     }
-
     .menu {
         position: absolute;
         background:#4E94AB;
         width: 70%;
         margin-left: -70%;
         transition: all 0.25s;
-
     }
 
     .menu ul {
@@ -80,97 +78,18 @@ flex-grow: 1;
     }
 }
 
-
-/*INICIO SLIDER*/
-.slider {
-    width:95%;
-    margin: auto;
-    overflow: hidden;
-}
-    
-.slider ul {
-        display: flex;
-        padding: 0;
-        width: 400%; /*100*númeroi de imagenes*/
-    
-        /*Animacion*/
-        animation: cambio 20s infinite;
-        /*Esta línea invierte la animacion*/
-        animation-direction: alternate;    
-        /*tambien vale "animation: cambio 20s infinite alternate;" */
-
-        animation-timing-function: ease-in;
-    
-}
-
- .slider li {
-        width: 100%;
-        list-style: none;
-}  
-
-.sldier img {
-        width: 100%;
-}
-    
-    @keyframes cambio {
-       0%  {margin-left: 0;}
-       10% {margin-left: 0;}
-    
-       0% {margin-left:-100%;}
-       10% {margin-left: -100%;}
-    
-       00% {margin-left:-200%;}
-       15% {margin-left: -200%;}
-    
-       0% {margin-left:-300%;}
-       10% {margin-left:-300%;}
-    
-    }
-/*FIN SLIDER*/
-
-
-/*slider 2*/
-.slider2 {
-    width: 100%;
-    height: 600px;
-    overflow: hidden;
-    }
-.slider2 ul{
-
-    display:flex;
-    animation: cambio2 20s infinite alternate linear;
-}
-
-.slider2 li{
-    width: 100%;
-    list-style: none;
-}
-
-@Keyframes cambio2{
-    0%  {margin-left: 0;}
-    20% {margin-left: 0;}
- 
-    25% {margin-left:-100%;}
-    45% {margin-left: -100%;}
- 
-    50% {margin-left:-200%;}
-    70% {margin-left: -200%;}
- 
-    75% {margin-left:-300%;}
-    100% {margin-left:-300%;}
-}
-/*fin slider2*/
-
+/*SLIDER*/
 /*Solo fotos 1440x900*/
 .banner {
     position: relative;
     width: 100%;
-    height: calc(50vh); /*50vh = 50% del navegador*/
+    height: calc(75vh); /*50vh = 50% del navegador*/
     background-color:#F5F5F5;
     background-size: cover;
     background-position: center;
     transition: all .1s ease-in-out;
     background-image: url(../PaginaWeb/Imagenes/slide/1.jpg);
+    animation: banner 28s infinite linear; /*el 28 viene de 28/4 imagenes= 7 seg imagen*/
 }
 .banner-content{
     margin: 0;
@@ -184,8 +103,50 @@ flex-grow: 1;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-
+}
+.banner-content h1{ /*Estilos texto del slider*/
+    margin: 0;
+    padding: 0;
+    padding-bottom: 30px;
+    font-size: 40px;
+    text-align: center;    
+}
+.banner-content a{ /*Estilos boton del slider*/
+    text-decoration: none;
+    color: #FFF;
+    padding:9px 20px; /*9px de arriba abajo, 20 px lado a lado*/
+    border: 1px solid #FFF;
+    text-transform: uppercase;
+    transition: all .3s ease-in-out;
 }
 
-/*https://www.youtube.com/watch?v=rq5RWBQ6A5M&list=PLcPtd5Q-GHnqPxEV7PE81GMtlIMLfWdqr&index=7&ab_channel=Designlopers 10:08*/
+.banner-content a:hover{/*Animación ratón por encima*/
+    background-color: rgb(17, 12, 12);
+    color: rgb(255, 253, 253);
+}
+@keyframes banner{/*100%/nº imagenes*/
+    0%{
+        background-image: url(../PaginaWeb/Imagenes/slide/1.jpg);
+    }
+    25%{
+        background-image: url(../PaginaWeb/Imagenes/slide/1.jpg);
+    }
+    26%{
+        background-image: url(../PaginaWeb/Imagenes/slide/2.jpg);
+    }
+    50%{
+        background-image: url(../PaginaWeb/Imagenes/slide/2.jpg);
+    }
+    51%{
+        background-image: url(../PaginaWeb/Imagenes/slide/3.jpg);
+    }
+    75%{
+        background-image: url(../PaginaWeb/Imagenes/slide/3.jpg);
+    }
+    76%{
+        background-image: url(../PaginaWeb/Imagenes/slide/4.jpg);
+    }
+    100%{
+        background-image: url(../PaginaWeb/Imagenes/slide/4.jpg);
+    }
+}
