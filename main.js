@@ -1,13 +1,13 @@
-document.addEventListener("DOMContentLoaded", function(e){
+document.addEventListener("DOMContentLoaded", function (e) {
     const parrafos = document.querySelectorAll('.descripcion');
     let alturas = [];
-    let alturaMaxima =0;
+    let alturaMaxima = 0;
 
-    const aplicarAlturas = (function aplicarAlturas(){
+    const aplicarAlturas = (function aplicarAlturas() {
         parrafos.forEach(parrafo => {
-            if(alturaMaxima == 0){
+            if (alturaMaxima == 0) {
                 alturas.push(parrafo.clientHeight);
-            }else{
+            } else {
                 parrafo.style.height = alturaMaxima + "px";
             }
 
