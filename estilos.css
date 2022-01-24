@@ -89,7 +89,7 @@ flex-grow: 1;
     background-size: cover;
     background-position: center;
     transition: all .1s ease-in-out;
-    background-image: url(../PaginaWeb/Imagenes/slide/1.jpg);
+    background-image: url(../../Imagenes/slide/1.jpg);
     animation: banner 28s infinite linear; /*el 28 viene de 28/4 imagenes= 7 seg imagen*/
 }
 .banner-content{
