@@ -2,6 +2,11 @@
 body{
     margin: 0;
     font-family: sans-serif;
+    background-image: url("../WebPersonal/Imagenes/fodo3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
 }
 
 header {
