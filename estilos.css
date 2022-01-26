@@ -210,25 +210,7 @@ flex-grow: 1;
     background-position: center;
     transition: .2s;
 }
-/*
-.post-img-5{
-    background: url(../WebPersonal/Imagenes/Articulos/Destacados/5.jpg);
-    width: 100%;
-    height: 200px;
-    background-size: cover;
-    background-position: center;
-    transition: .2s;
-}
 
-.post-img-6{
-    background: url(../WebPersonal/Imagenes/Articulos/Destacados/6.jpg);
-    width: 100%;
-    height: 200px;
-    background-size: cover;
-    background-position: center;
-    transition: .2s;
-}
-*/
 .post{
 
     background-color: #212222;
