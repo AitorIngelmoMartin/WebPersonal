@@ -157,18 +157,20 @@ flex-grow: 1;
     }
 }
 
+/*******************************************************************************/
+
 /*Articulos destacados*/
 .post-list {
     display: flex;
     min-height: 30vh; /*Distancia del slide a articulos*/
-    align-items: center;
+    align-items: bottom;
     justify-content: space-ar;
     padding: 30px 15px;
 }
 
 .content{
     display: grid;
-    grid-template-columns: repeat(3, 2fr); /*División en 3 columnas*/
+    grid-template-columns: repeat(4, 2fr); /*División en 3 columnas*/
     grid-gap: 10px;
     max-width: 1500px;
     margin: auto;
@@ -208,7 +210,7 @@ flex-grow: 1;
     background-position: center;
     transition: .2s;
 }
-
+/*
 .post-img-5{
     background: url(../WebPersonal/Imagenes/Articulos/Destacados/5.jpg);
     width: 100%;
@@ -226,9 +228,10 @@ flex-grow: 1;
     background-position: center;
     transition: .2s;
 }
-
+*/
 .post{
 
+    background-color: #212222;
     box-shadow: 0 1px 6px 1px rgba(0,0,0,0.1);
     overflow: hidden;
     transition: .2s;
@@ -259,16 +262,18 @@ flex-grow: 1;
 }
 
 .post-body span{
-    display: inline-block;
-    color: #999;
+    display: inline-block;    
+    color: rgb(88, 84, 84);
     margin-bottom: 10px;
 }
 
 .post-body h5{
+    color: #999;
     margin-bottom: 15px;
 }
 
 .post-body p{
+    color: #FFF;
     line-height: 1.5;
     margin-bottom: 20px;
 }
