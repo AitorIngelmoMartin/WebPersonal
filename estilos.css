@@ -158,7 +158,30 @@ flex-grow: 1;
 }
 
 /*******************************************************************************/
+/*Caja de Main*/
 
+.titulo-base{
+    position: relative;
+    background:#F5F5F5;
+    padding:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.contenido-texto{
+    position: relative;
+    z-index: 1;
+    background:#F5F5F5;
+    padding:70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+/*******************************************************************************/
 /*Articulos destacados*/
 .post-list {
     display: flex;
@@ -293,7 +316,6 @@ flex-grow: 1;
 }
 
 /*******************************************************************************/
-
 /*Fooder de la web*/
 
 footer{
