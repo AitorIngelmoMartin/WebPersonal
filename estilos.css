@@ -1,11 +1,16 @@
-
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Josefin Sans', sans-serif;
+	box-sizing: border-box;
+}
 body{
     margin: 0;
     font-family: sans-serif;
-    background-image: url("../WebPersonal/Imagenes/fodo3.jpg");
+    background-image: url("../WebPersonal/Imagenes/fondo_grande.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: top;
     background-attachment: fixed;
 }
 
@@ -89,7 +94,7 @@ flex-grow: 1;
 .banner {
     position: relative;
     width: 100%;
-    height: calc(75vh); /*50vh = 50% del navegador*/
+    height: calc(55vh); /*50vh = 50% del navegador*/
     background-color:#F5F5F5;
     background-size: cover;
     background-position: center;
@@ -102,7 +107,7 @@ flex-grow: 1;
     padding: 0;
     width: 100%;
     height: 100%;
-    color: #FFF;
+    color: rgb(255, 255, 255);
     background-color: rgba(0, 22, 40, 0.349);/*Tinta de la foto*/
     display: flex;
     /*Alinear texto en centro*/
@@ -158,11 +163,98 @@ flex-grow: 1;
 }
 
 /*******************************************************************************/
+
+
+/*******************************************************************************/
+
+
+span{
+	color: rgb(250, 104, 104);
+}
+.about{
+	width: 100%;
+	padding: 100px 0px;
+	background-color: #191919dc;
+}
+.about img{
+	height: auto;
+	width: 430px;
+}
+.about-text{
+	width: 550px;
+}
+
+.main{
+	width: 1130px;
+	max-width: 95%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.about-text h2{
+	color: rgb(240, 166, 166);
+	font-size: 75px;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+}
+.about-text h5{
+	color: white;
+	letter-spacing: 2px;
+	font-size: 22px;
+	margin-bottom: 25px;
+	text-transform: capitalize;
+}
+.about-text p{
+	color: rgba(247, 228, 247, 0.8);
+	letter-spacing: 1px;
+	line-height: 28px;
+	font-size: 18px;
+	margin-bottom: 45px;
+}
+button{
+    background:#545657;
+    color:#FFF;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 13px 30px;
+	border-radius: 30px;
+	transition: .4s; 
+}
+button:hover{
+	background-color: transparent;
+	border: 2px solid rgba(211, 211, 211, 0.1);
+	cursor: pointer;
+}
+
+/********/
+
+.service{
+	background: #101010;
+	width: 100%;
+	padding: 100px 0px;
+}
+.Base-Slider h2{
+	color: rgb(240, 166, 166);
+	font-size: 75px;
+	width: 1130px;
+	margin: 30px auto;
+	text-align: center;
+}
+.box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 400px;
+}
+
+/********/
 /*Caja de Main*/
 
 .titulo-base{
     position: relative;
-    background:#F5F5F5;
+    background:#f5f5f594;
     padding:10px;
     display: flex;
     justify-content: center;
@@ -172,18 +264,27 @@ flex-grow: 1;
 .contenido-texto{
     position: relative;
     z-index: 1;
-    background:#F5F5F5;
+    /*background:#f5f5f594;*/
     padding:70px;
     display: flex;
     justify-content: center;
     align-items: center;
+    color:rgb(255, 255, 255);
 
 }
+/*Espacio-transparente*/
 
+.Espacio-transparente {
+    width: 300px;
+    margin: 10%;
+    padding: 10%;
+    color: rgb(253, 253, 253);
+  }
 
 /*******************************************************************************/
 /*Articulos destacados*/
 .post-list {
+    background-color: rgb(0, 0, 0);
     display: flex;
     min-height: 30vh; /*Distancia del slide a articulos*/
     align-items: bottom;
